@@ -37,6 +37,9 @@ ln -sTf $VENDOR_DIR /app/.heroku/vendor
 
 # install protobuf
 CACHED_PROTOBUF_TARBALL="$CACHE_DIR/protobuf.tar.gz"
+
+log "CACHED_PROTOBUF_TARBALL = $CACHED_PROTOBUF_TARBALL"
+
 if [ -z "$PROTOBUF_TARBALL_URL" ]; then
     PROTOBUF_TARBALL_URL=https://github.com/google/protobuf/releases/download/v2.6.1/protobuf-2.6.1.tar.gz
 fi

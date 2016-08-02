@@ -51,4 +51,7 @@ fi
 
 wget $PROTOBUF_TARBALL_URL -O $CACHED_PROTOBUF_TARBALL
 
+log "protobuf cache dir = $CACHE_DIR"
+log "protobuf vendor dir = $VENDOR_DIR"
+
 tar xvf $CACHED_PROTOBUF_TARBALL -C $VENDOR_DIR

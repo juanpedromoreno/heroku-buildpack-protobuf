@@ -52,6 +52,8 @@ else
     MD5_HEADER=()
 fi
 
+log "curl statement = $CACHED_PROTOBUF_TARBALL ${MD5_HEADER[@]} $PROTOBUF_TARBALL_URL"
+
 curl -sfSo $CACHED_PROTOBUF_TARBALL \
     "${MD5_HEADER[@]}" $PROTOBUF_TARBALL_URL
 

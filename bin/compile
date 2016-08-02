@@ -55,3 +55,4 @@ log "protobuf cache dir = $CACHE_DIR"
 log "protobuf vendor dir = $VENDOR_DIR"
 
 tar xvf $CACHED_PROTOBUF_TARBALL -C $VENDOR_DIR
+cd $VENDOR_DIR && ./configure --prefix=/app/.heroku/vendor && make && make install
